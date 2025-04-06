@@ -27,3 +27,14 @@ let [ first , second ] = scores;
 console.log(first);
 console.log(second);
 
+//part 4
+let studentCopy = { ...student }; 
+console.log(studentCopy); 
+
+let modifiedStudent = { ...student, graduationYear: 2023 }; 
+console.log(modifiedStudent);
+
+let extraCourses = ["history", "art"];
+let mergedCourses = [...student.courses, ...extraCourses];
+console.log(mergedCourses);
+
