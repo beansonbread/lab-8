@@ -38,3 +38,21 @@ let extraCourses = ["history", "art"];
 let mergedCourses = [...student.courses, ...extraCourses];
 console.log(mergedCourses);
 
+//part 5
+function addCourse() {
+    let newCourse = prompt("Enter a new course:"); 
+    if (newCourse) {
+        student.courses.push(newCourse);
+        console.log(`Added course: ${newCourse}`);
+    } else {
+        console.log("No course added.");
+    }
+}
+
+function calculateCourses() {
+    let totalCourses = student.courses.length;
+    console.log(`Total courses: ${totalCourses}`);
+}
+
+addCourse();
+calculateCourses();
