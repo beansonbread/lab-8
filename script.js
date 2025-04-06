@@ -56,3 +56,10 @@ function calculateCourses() {
 
 addCourse();
 calculateCourses();
+
+//bonus task
+function calculateAverage() {
+    return scores.reduce((acc, score) => acc + score, 0) / scores.length;
+}
+
+console.log("average of scores:", calculateAverage());
